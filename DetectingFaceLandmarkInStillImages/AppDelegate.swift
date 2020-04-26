@@ -17,7 +17,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView(image: UserData().featureImage)
+        let landmark = Landmark()
+        // let res = landmark.detect(filename: "/Users/s04118/yasu.jpg")
+        //let image = UserData().featureImage
+        landmark.detect(filename: "/Users/s04118/yasu.jpg")
+        // let l = landmark.landmark!
+        
+        let contentView = ContentView(image: UserData().featureImage, landmarks: landmark)
 
         // Create the window and set the content view. 
         window = NSWindow(
@@ -37,3 +43,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 }
 
+
+struct AppDelegate_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+    }
+}

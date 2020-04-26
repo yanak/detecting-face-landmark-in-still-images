@@ -14,6 +14,8 @@
 		2F38A8672432311500116881 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F38A8652432311500116881 /* Main.storyboard */; };
 		2F5C91B02436C4ED003C2D4C /* FaceImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C91AF2436C4ED003C2D4C /* FaceImage.swift */; };
 		2F5C91B22436CA4A003C2D4C /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C91B12436CA4A003C2D4C /* UserData.swift */; };
+		2FB1034B2439F20000BDAF73 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB1034A2439F20000BDAF73 /* Landmark.swift */; };
+		2FB2E4C1244B439A003009C2 /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB2E4C0244B439A003009C2 /* HexagonParameters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		2F38A8692432311500116881 /* DetectingFaceLandmarkInStillImages.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DetectingFaceLandmarkInStillImages.entitlements; sourceTree = "<group>"; };
 		2F5C91AF2436C4ED003C2D4C /* FaceImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceImage.swift; sourceTree = "<group>"; };
 		2F5C91B12436CA4A003C2D4C /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		2FB1034A2439F20000BDAF73 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		2FB2E4C0244B439A003009C2 /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 				2F38A8692432311500116881 /* DetectingFaceLandmarkInStillImages.entitlements */,
 				2F38A8622432311500116881 /* Preview Content */,
 				2F5C91AF2436C4ED003C2D4C /* FaceImage.swift */,
+				2FB2E4C0244B439A003009C2 /* HexagonParameters.swift */,
 			);
 			path = DetectingFaceLandmarkInStillImages;
 			sourceTree = "<group>";
@@ -84,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				2F5C91B12436CA4A003C2D4C /* UserData.swift */,
+				2FB1034A2439F20000BDAF73 /* Landmark.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -159,10 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB2E4C1244B439A003009C2 /* HexagonParameters.swift in Sources */,
 				2F5C91B02436C4ED003C2D4C /* FaceImage.swift in Sources */,
 				2F38A85F2432311100116881 /* ContentView.swift in Sources */,
 				2F5C91B22436CA4A003C2D4C /* UserData.swift in Sources */,
 				2F38A85D2432311100116881 /* AppDelegate.swift in Sources */,
+				2FB1034B2439F20000BDAF73 /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
