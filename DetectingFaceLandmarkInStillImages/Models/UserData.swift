@@ -12,7 +12,7 @@ final class UserData: ObservableObject {
     // var facialImages = FacialImage()
     var featureImage: NSImage? {
         // var img = NSImage(byReferencingFile: "spe")
-        let nsImage = NSImage(byReferencingFile: "/Users/s04118/yasu.jpg")
+        let nsImage = NSImage(byReferencingFile: "/Users/s04118/Documents/oji.jpg")
         return nsImage
     }
 }

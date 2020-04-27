@@ -78,7 +78,7 @@ class Landmark: ObservableObject {
         
         if let dataProvider = CGDataProvider(filename: filename) {
             if let cgImage = CGImage(jpegDataProviderSource: dataProvider, decode: nil, shouldInterpolate: false, intent: CGColorRenderingIntent.defaultIntent) {
-                performVisionRequest(image: cgImage, orientation: CGImagePropertyOrientation.down, faceLandmarkRequest: faceLandmarkRequest)
+                performVisionRequest(image: cgImage, orientation: CGImagePropertyOrientation.downMirrored, faceLandmarkRequest: faceLandmarkRequest)
             }
             print("finish")
         }
